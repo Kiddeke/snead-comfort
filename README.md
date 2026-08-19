@@ -7,7 +7,7 @@ Marketing site for Snead Comfort Solutions, an owner-operated certified HVAC com
 
 - `index.html` — the whole site, a single self-contained page (styles inline, fonts from Google Fonts).
 - `assets/logo-5-final.svg` — **the final logo** (Wesley's pick): wide lime/blue diamond with italic SCS.
-  Brand colors: lime `#8CC63F`, brand blue `#1B5CA8`, deep blue `#0F3563`. Typefaces: Kanit Black Italic (SCS monogram), Poppins (wordmark &amp; site).
+  Brand colors: lime `#8CC63F`, brand blue `#1B5CA8`, deep blue `#0F3563`. Typefaces: Kanit Black Italic (SCS monogram), Poppins (wordmark and site).
 - `assets/logo-1-diamond-monogram.svg` … `logo-4-wordmark.svg` — first-round concepts, kept for reference
   (these use the original navy/ember palette).
 - `assets/favicon.svg` — browser tab icon.
