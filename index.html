@@ -8,20 +8,20 @@
 <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&display=swap">
 <style>
   :root {
-    --ink: #142A3B;
-    --ink-deep: #0D1E2C;
-    --steel: #2B6E9E;
-    --steel-light: #5FA8D3;
-    --ember: #E8622C;
-    --ember-deep: #C44A18;
+    --ink: #0F3563;
+    --ink-deep: #0A2647;
+    --steel: #1B5CA8;
+    --steel-light: #6FAADC;
+    --ember: #8CC63F;
+    --ember-deep: #55841F;
     --paper: #F5F8FA;
     --card: #FFFFFF;
     --slate: #3C4B57;
     --mist: #DCE6ED;
-    --display: 'Barlow Condensed', 'Arial Narrow', sans-serif;
+    --display: 'Poppins', 'Segoe UI', sans-serif;
     --body: 'Source Sans 3', 'Segoe UI', sans-serif;
   }
   * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -49,7 +49,7 @@
   .brand-mark { flex: none; }
   .brand-text { display: flex; flex-direction: column; line-height: 1.05; }
   .brand-name {
-    font-family: var(--display); font-weight: 700; font-size: 1.5rem;
+    font-family: var(--display); font-weight: 700; font-size: 1.2rem;
     letter-spacing: 0.03em; color: var(--ink); text-transform: uppercase;
   }
   .brand-tag {
@@ -58,7 +58,7 @@
   }
   nav { display: flex; align-items: center; gap: 22px; }
   nav a {
-    font-family: var(--display); font-weight: 600; font-size: 1rem;
+    font-family: var(--display); font-weight: 600; font-size: 0.88rem;
     letter-spacing: 0.08em; text-transform: uppercase;
     color: var(--slate); text-decoration: none;
   }
@@ -69,8 +69,8 @@
     padding: 10px 22px; border-radius: 4px; text-decoration: none;
     transition: background 0.15s ease;
   }
-  .btn-call { background: var(--ember); color: #fff; }
-  .btn-call:hover, .btn-call:focus-visible { background: var(--ember-deep); }
+  .btn-call { background: var(--ember); color: var(--ink-deep); }
+  .btn-call:hover, .btn-call:focus-visible { background: #79B32F; }
   .btn-ghost { border: 2px solid var(--ink); color: var(--ink); }
   .btn-ghost:hover, .btn-ghost:focus-visible { background: var(--ink); color: var(--paper); }
   a:focus-visible, .btn:focus-visible { outline: 3px solid var(--steel-light); outline-offset: 2px; }
@@ -89,7 +89,7 @@
   }
   .hero h1 {
     font-family: var(--display); font-weight: 700; text-transform: uppercase;
-    font-size: clamp(2.6rem, 6vw, 4.2rem); line-height: 0.98;
+    font-size: clamp(2.2rem, 5vw, 3.4rem); line-height: 1.05;
     letter-spacing: 0.01em; color: #fff; text-wrap: balance;
     margin-bottom: 22px;
   }
@@ -114,7 +114,7 @@
   }
   h2 {
     font-family: var(--display); font-weight: 700; text-transform: uppercase;
-    font-size: clamp(1.9rem, 4vw, 2.6rem); line-height: 1.05;
+    font-size: clamp(1.6rem, 3.4vw, 2.2rem); line-height: 1.15;
     color: var(--ink); text-wrap: balance; margin-bottom: 14px;
   }
   .section-lede { max-width: 62ch; font-size: 1.08rem; margin-bottom: 40px; }
@@ -129,27 +129,27 @@
   }
   .service svg { width: 44px; height: 44px; }
   .service h3 {
-    font-family: var(--display); font-weight: 700; font-size: 1.35rem;
+    font-family: var(--display); font-weight: 700; font-size: 1.12rem;
     text-transform: uppercase; letter-spacing: 0.04em; color: var(--ink);
   }
   .service p { font-size: 0.98rem; }
 
   /* maintenance band */
-  .plan { background: var(--ember); color: #fff; }
+  .plan { background: var(--steel); color: #fff; }
   .plan-inner {
     display: grid; grid-template-columns: 1fr auto; gap: 32px; align-items: center;
     padding: 56px 0;
   }
-  .plan .section-kicker { color: #FFD9C4; }
+  .plan .section-kicker { color: #D3ECAF; }
   .plan h2 { color: #fff; }
-  .plan p { max-width: 58ch; font-size: 1.08rem; color: #FFE8DC; }
-  .plan .btn { background: var(--ink); color: #fff; white-space: nowrap; }
-  .plan .btn:hover, .plan .btn:focus-visible { background: var(--ink-deep); }
+  .plan p { max-width: 58ch; font-size: 1.08rem; color: #E3F2FB; }
+  .plan .btn { background: var(--ember); color: var(--ink-deep); white-space: nowrap; }
+  .plan .btn:hover, .plan .btn:focus-visible { background: #79B32F; }
   .plan ul { margin: 16px 0 0 0; padding: 0; list-style: none; display: grid; gap: 8px; }
-  .plan li { padding-left: 26px; position: relative; color: #FFF3EC; }
+  .plan li { padding-left: 26px; position: relative; color: #EFF6FD; }
   .plan li::before {
     content: ""; position: absolute; left: 0; top: 7px;
-    width: 12px; height: 12px; background: var(--ink); transform: rotate(45deg);
+    width: 12px; height: 12px; background: var(--ember); transform: rotate(45deg);
   }
   @media (max-width: 720px) { .plan-inner { grid-template-columns: 1fr; } }
 
@@ -200,10 +200,11 @@
 <header>
   <div class="wrap header-inner">
     <a class="brand" href="#top" aria-label="Snead Comfort Solutions home">
-      <svg class="brand-mark" width="42" height="42" viewBox="0 0 120 120" aria-hidden="true">
-        <g fill="none" stroke-width="11" stroke-linecap="square">
-          <polyline points="14,52 60,8 106,52" stroke="var(--ember)"/>
-          <polyline points="14,68 60,112 106,68" stroke="var(--steel)"/>
+      <svg class="brand-mark" width="58" height="38" viewBox="0 0 96 60" aria-hidden="true">
+        <g fill="none">
+          <polygon points="48,3 93,30 48,57 3,30" stroke="var(--steel)" stroke-width="2.5"/>
+          <polygon points="48,9 84,30 48,51 12,30" stroke="var(--ember)" stroke-width="5"/>
+          <polygon points="48,16 73,30 48,44 23,30" stroke="var(--steel)" stroke-width="2"/>
         </g>
       </svg>
       <span class="brand-text">
@@ -233,13 +234,35 @@
           <a class="btn btn-ghost" href="#services">See services</a>
         </div>
       </div>
-      <svg class="hero-art" width="300" height="330" viewBox="0 0 260 290" aria-hidden="true">
-        <g fill="none" stroke-width="20" stroke-linecap="square">
-          <polyline points="32,112 130,18 228,112" stroke="#E8622C"/>
-          <polyline points="32,138 130,232 228,138" stroke="#5FA8D3"/>
+      <svg class="hero-art" width="410" height="270" viewBox="0 0 664 436" aria-hidden="true">
+        <rect x="0" y="0" width="664" height="436" rx="22" fill="#FFFFFF"/>
+        <g transform="translate(52,50)">
+          <g fill="none">
+            <polygon points="280,7 545,155 280,303 15,155" stroke="#1B5CA8" stroke-width="5"/>
+            <polygon points="280,18 526,155 280,292 34,155" stroke="#8CC63F" stroke-width="14"/>
+            <polygon points="280,31 504,155 280,279 56,155" stroke="#1B5CA8" stroke-width="4.5"/>
+          </g>
+          <rect x="258" y="258" width="44" height="34" fill="#FFFFFF"/>
+          <g font-family="'Poppins','Segoe UI',sans-serif" text-anchor="middle">
+            <g font-weight="800" font-size="96" transform="translate(26.8,0) skewX(-10)">
+              <text x="280" y="152" fill="none" stroke="#FFFFFF" stroke-width="20" stroke-linejoin="round" textLength="260" lengthAdjust="spacingAndGlyphs">SCS</text>
+              <text x="280" y="152" fill="none" stroke="#8CC63F" stroke-width="10" stroke-linejoin="round" textLength="260" lengthAdjust="spacingAndGlyphs">SCS</text>
+              <text x="280" y="152" fill="#1B5CA8" textLength="260" lengthAdjust="spacingAndGlyphs">SCS</text>
+            </g>
+            <g font-weight="700" font-size="42">
+              <text x="280" y="200" fill="none" stroke="#FFFFFF" stroke-width="13" stroke-linejoin="round" textLength="368" lengthAdjust="spacingAndGlyphs">SNEAD COMFORT</text>
+              <text x="280" y="200" fill="#8CC63F" textLength="368" lengthAdjust="spacingAndGlyphs">SNEAD COMFORT</text>
+            </g>
+            <g font-weight="700" font-size="33" letter-spacing="6">
+              <text x="280" y="235" fill="none" stroke="#FFFFFF" stroke-width="11" stroke-linejoin="round" textLength="240" lengthAdjust="spacingAndGlyphs">SOLUTIONS</text>
+              <text x="280" y="235" fill="#1B5CA8" textLength="240" lengthAdjust="spacingAndGlyphs">SOLUTIONS</text>
+            </g>
+            <g font-weight="700" font-size="30" letter-spacing="3">
+              <text x="280" y="286" fill="none" stroke="#FFFFFF" stroke-width="10" stroke-linejoin="round"><tspan>HVAC</tspan><tspan dx="10">SERVICES</tspan></text>
+              <text x="280" y="286"><tspan fill="#1B5CA8">HVAC</tspan><tspan dx="10" fill="#8CC63F">SERVICES</tspan></text>
+            </g>
+          </g>
         </g>
-        <text x="130" y="143" text-anchor="middle" font-family="'Barlow Condensed','Arial Narrow',sans-serif" font-weight="700" font-size="58" letter-spacing="3" fill="#F5F8FA">SCS</text>
-        <text x="130" y="278" text-anchor="middle" font-family="'Barlow Condensed','Arial Narrow',sans-serif" font-weight="500" font-size="18" letter-spacing="6" fill="#7FA8C4">EST. 2026</text>
       </svg>
     </div>
   </div>
@@ -251,22 +274,22 @@
       <p class="section-lede">One certified technician, four core services, zero runaround. You talk to the person doing the work — before, during, and after the job.</p>
       <div class="services-grid">
         <div class="service">
-          <svg viewBox="0 0 44 44" aria-hidden="true"><path d="M28 6a10 10 0 0 0-13 13L6 28a4 4 0 0 0 0 6l4 4a4 4 0 0 0 6 0l9-9A10 10 0 0 0 38 16l-6 6-6-2-2-6 6-6-2-2z" fill="none" stroke="#2B6E9E" stroke-width="2.6" stroke-linejoin="round"/></svg>
+          <svg viewBox="0 0 44 44" aria-hidden="true"><path d="M28 6a10 10 0 0 0-13 13L6 28a4 4 0 0 0 0 6l4 4a4 4 0 0 0 6 0l9-9A10 10 0 0 0 38 16l-6 6-6-2-2-6 6-6-2-2z" fill="none" stroke="#1B5CA8" stroke-width="2.6" stroke-linejoin="round"/></svg>
           <h3>Repairs</h3>
           <p>No heat in January or no cool in July — diagnosis first, a straight answer on cost, then a fix that lasts. All major residential makes and models.</p>
         </div>
         <div class="service">
-          <svg viewBox="0 0 44 44" aria-hidden="true"><rect x="8" y="6" width="28" height="32" rx="3" fill="none" stroke="#2B6E9E" stroke-width="2.6"/><line x1="14" y1="14" x2="30" y2="14" stroke="#E8622C" stroke-width="2.6"/><line x1="14" y1="21" x2="30" y2="21" stroke="#2B6E9E" stroke-width="2.6"/><line x1="14" y1="28" x2="30" y2="28" stroke="#2B6E9E" stroke-width="2.6"/></svg>
+          <svg viewBox="0 0 44 44" aria-hidden="true"><rect x="8" y="6" width="28" height="32" rx="3" fill="none" stroke="#1B5CA8" stroke-width="2.6"/><line x1="14" y1="14" x2="30" y2="14" stroke="#8CC63F" stroke-width="2.6"/><line x1="14" y1="21" x2="30" y2="21" stroke="#1B5CA8" stroke-width="2.6"/><line x1="14" y1="28" x2="30" y2="28" stroke="#1B5CA8" stroke-width="2.6"/></svg>
           <h3>Installations</h3>
           <p>New builds and first-time central air. Right-sized equipment matched to your house with a real load calculation — not just the biggest unit on the truck.</p>
         </div>
         <div class="service">
-          <svg viewBox="0 0 44 44" aria-hidden="true"><path d="M10 16 22 6l12 10" fill="none" stroke="#E8622C" stroke-width="2.6" stroke-linecap="square"/><path d="M34 28 22 38 10 28" fill="none" stroke="#2B6E9E" stroke-width="2.6" stroke-linecap="square"/><line x1="22" y1="17" x2="22" y2="27" stroke="#142A3B" stroke-width="2.6"/></svg>
+          <svg viewBox="0 0 44 44" aria-hidden="true"><path d="M10 16 22 6l12 10" fill="none" stroke="#8CC63F" stroke-width="2.6" stroke-linecap="square"/><path d="M34 28 22 38 10 28" fill="none" stroke="#1B5CA8" stroke-width="2.6" stroke-linecap="square"/><line x1="22" y1="17" x2="22" y2="27" stroke="#0F3563" stroke-width="2.6"/></svg>
           <h3>Changeouts</h3>
           <p>When a unit is past saving, we swap it without drama: old equipment hauled away, the new system installed, dialed in, and tested before we leave.</p>
         </div>
         <div class="service">
-          <svg viewBox="0 0 44 44" aria-hidden="true"><circle cx="22" cy="22" r="16" fill="none" stroke="#2B6E9E" stroke-width="2.6"/><path d="M22 12v10l7 5" fill="none" stroke="#E8622C" stroke-width="2.6" stroke-linecap="round"/></svg>
+          <svg viewBox="0 0 44 44" aria-hidden="true"><circle cx="22" cy="22" r="16" fill="none" stroke="#1B5CA8" stroke-width="2.6"/><path d="M22 12v10l7 5" fill="none" stroke="#8CC63F" stroke-width="2.6" stroke-linecap="round"/></svg>
           <h3>Quarterly Maintenance</h3>
           <p>Four visits a year to keep small problems small: coils cleaned, filters swapped, refrigerant and electrical checked, everything documented.</p>
         </div>
@@ -293,14 +316,14 @@
   <section id="about" class="about">
     <div class="wrap about-inner">
       <svg class="about-badge" width="180" height="180" viewBox="0 0 240 240" aria-hidden="true">
-        <rect x="8" y="8" width="224" height="224" rx="26" fill="#142A3B"/>
-        <rect x="16" y="16" width="208" height="208" rx="20" fill="none" stroke="#2B6E9E" stroke-width="2"/>
+        <rect x="8" y="8" width="224" height="224" rx="26" fill="#0F3563"/>
+        <rect x="16" y="16" width="208" height="208" rx="20" fill="none" stroke="#1B5CA8" stroke-width="2"/>
         <g stroke="#F5F8FA" stroke-width="6" stroke-linecap="round" opacity="0.9">
           <line x1="58" y1="46" x2="182" y2="46"/><line x1="74" y1="62" x2="166" y2="62"/>
         </g>
-        <text x="120" y="112" text-anchor="middle" font-family="'Barlow Condensed','Arial Narrow',sans-serif" font-weight="700" font-size="52" letter-spacing="6" fill="#F5F8FA" textLength="130" lengthAdjust="spacingAndGlyphs">SNEAD</text>
-        <text x="120" y="142" text-anchor="middle" font-family="'Barlow Condensed','Arial Narrow',sans-serif" font-weight="600" font-size="23" letter-spacing="4" fill="#E8622C" textLength="168" lengthAdjust="spacingAndGlyphs">COMFORT SOLUTIONS</text>
-        <text x="120" y="166" text-anchor="middle" font-family="'Barlow Condensed','Arial Narrow',sans-serif" font-weight="500" font-size="14" letter-spacing="5" fill="#7FA8C4" textLength="118" lengthAdjust="spacingAndGlyphs">CERTIFIED HVAC</text>
+        <text x="120" y="112" text-anchor="middle" font-family="'Poppins','Segoe UI',sans-serif" font-weight="700" font-size="52" letter-spacing="6" fill="#F5F8FA" textLength="130" lengthAdjust="spacingAndGlyphs">SNEAD</text>
+        <text x="120" y="142" text-anchor="middle" font-family="'Poppins','Segoe UI',sans-serif" font-weight="600" font-size="23" letter-spacing="4" fill="#8CC63F" textLength="168" lengthAdjust="spacingAndGlyphs">COMFORT SOLUTIONS</text>
+        <text x="120" y="166" text-anchor="middle" font-family="'Poppins','Segoe UI',sans-serif" font-weight="500" font-size="14" letter-spacing="5" fill="#9DC1E0" textLength="118" lengthAdjust="spacingAndGlyphs">CERTIFIED HVAC</text>
         <g stroke="#F5F8FA" stroke-width="6" stroke-linecap="round" opacity="0.9">
           <line x1="74" y1="178" x2="166" y2="178"/><line x1="58" y1="194" x2="182" y2="194"/>
         </g>
@@ -311,7 +334,7 @@
         <p>Snead Comfort Solutions is owner-operated, which means the certified technician who answers the phone is the same one who shows up at your door — no dispatchers, no rotating crews, no upsell quotas.</p>
         <p>Wesley gives you a straight diagnosis, a clear price before work starts, and a job site left cleaner than he found it. When he says a repair will hold or a unit is worth replacing, that's the honest read — his name is on the truck.</p>
         <div class="cred">
-          <svg width="26" height="26" viewBox="0 0 26 26" aria-hidden="true"><polygon points="13,1 25,13 13,25 1,13" fill="none" stroke="#E8622C" stroke-width="2.4"/><path d="M8 13l3.5 3.5L18 10" fill="none" stroke="#2B6E9E" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <svg width="26" height="26" viewBox="0 0 26 26" aria-hidden="true"><polygon points="13,1 25,13 13,25 1,13" fill="none" stroke="#8CC63F" stroke-width="2.4"/><path d="M8 13l3.5 3.5L18 10" fill="none" stroke="#1B5CA8" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
           <strong>Certified HVAC · Licensed &amp; Insured</strong>
         </div>
       </div>
