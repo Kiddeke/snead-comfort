@@ -7,10 +7,10 @@
   </g>
   <rect x="258" y="258" width="44" height="34" fill="#FFFFFF"/>
   <g font-family="'Poppins','Segoe UI',sans-serif" text-anchor="middle">
-    <g font-weight="800" font-size="96" transform="translate(26.8,0) skewX(-10)">
-      <text x="280" y="152" fill="none" stroke="#FFFFFF" stroke-width="20" stroke-linejoin="round" textLength="260" lengthAdjust="spacingAndGlyphs">SCS</text>
-      <text x="280" y="152" fill="none" stroke="#8CC63F" stroke-width="10" stroke-linejoin="round" textLength="260" lengthAdjust="spacingAndGlyphs">SCS</text>
-      <text x="280" y="152" fill="#1B5CA8" textLength="260" lengthAdjust="spacingAndGlyphs">SCS</text>
+    <g font-family="'Kanit','Poppins','Segoe UI',sans-serif" font-weight="900" font-style="italic" font-size="100">
+      <text x="280" y="152" fill="none" stroke="#FFFFFF" stroke-width="20" stroke-linejoin="round" textLength="264" lengthAdjust="spacingAndGlyphs">SCS</text>
+      <text x="280" y="152" fill="none" stroke="#8CC63F" stroke-width="10" stroke-linejoin="round" textLength="264" lengthAdjust="spacingAndGlyphs">SCS</text>
+      <text x="280" y="152" fill="#1B5CA8" textLength="264" lengthAdjust="spacingAndGlyphs">SCS</text>
     </g>
     <g font-weight="700" font-size="42">
       <text x="280" y="200" fill="none" stroke="#FFFFFF" stroke-width="13" stroke-linejoin="round" textLength="368" lengthAdjust="spacingAndGlyphs">SNEAD COMFORT</text>
