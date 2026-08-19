@@ -21,13 +21,20 @@ Marketing site for Snead Comfort Solutions, an owner-operated certified HVAC com
 3. **Email**: `wesley@sneadcomfort.com` — set this mailbox up on the domain, or change it.
 4. **License number**: add Wesley's HVAC license/cert number to the footer if required in your state.
 
-## Deploying to sneadcomfort.com
+## Going live
 
-Enable GitHub Pages on this repo (Settings → Pages → deploy from branch), then in your
-domain registrar point sneadcomfort.com at GitHub Pages (A records `185.199.108.153`,
-`.109.`, `.110.`, `.111.` and a `www` CNAME to `<username>.github.io`). The `CNAME` file
-here handles the rest. Any other static host (Netlify, Cloudflare Pages) works too —
-just serve this folder.
+1. **Enable GitHub Pages** (one time, needs repo admin): repo **Settings → Pages →
+   Build and deployment → Source: "Deploy from a branch"** → Branch:
+   `claude/snead-comfort-website-necqx4`, folder `/ (root)` → Save.
+   The site appears at `https://kiddeke.github.io/snead-comfort/` within a minute or two.
+2. **Point the domain**: at your registrar, add these DNS records for sneadcomfort.com —
+   four A records `185.199.108.153`, `185.199.109.153`, `185.199.110.153`,
+   `185.199.111.153`, plus a CNAME record for `www` → `kiddeke.github.io`.
+   The `CNAME` file in this repo tells Pages the custom domain automatically.
+3. Back in Settings → Pages, confirm **Custom domain** shows `sneadcomfort.com` and
+   tick **Enforce HTTPS** once the certificate is issued (can take up to an hour).
+
+Any other static host (Netlify, Cloudflare Pages) works too — just serve this folder.
 
 ## Logo note
 
