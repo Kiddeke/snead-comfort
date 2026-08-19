@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 120" width="460" height="120" role="img" aria-label="Snead Comfort Solutions horizontal wordmark">
+  <!-- Concept 4: horizontal lockup for the website header, truck door, and invoices -->
+  <g fill="none" stroke-width="9" stroke-linecap="square">
+    <polyline points="18,52 55,16 92,52" stroke="#E8622C"/>
+    <polyline points="18,66 55,102 92,66" stroke="#2B6E9E"/>
+  </g>
+  <text x="118" y="66" font-family="'Barlow Condensed','Arial Narrow',sans-serif" font-weight="700" font-size="58" letter-spacing="2" fill="#142A3B" textLength="320" lengthAdjust="spacingAndGlyphs">SNEAD COMFORT</text>
+  <text x="120" y="98" font-family="'Barlow Condensed','Arial Narrow',sans-serif" font-weight="500" font-size="24" letter-spacing="10" fill="#2B6E9E" textLength="318" lengthAdjust="spacingAndGlyphs">SOLUTIONS · CERTIFIED HVAC</text>
+</svg>

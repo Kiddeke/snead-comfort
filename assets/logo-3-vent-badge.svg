@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="240" height="240" role="img" aria-label="Snead Comfort Solutions vent badge logo">
+  <!-- Concept 3: shirt-patch badge — navy plate with vent louvers framing the stacked wordmark -->
+  <rect x="8" y="8" width="224" height="224" rx="26" fill="#142A3B"/>
+  <rect x="16" y="16" width="208" height="208" rx="20" fill="none" stroke="#2B6E9E" stroke-width="2"/>
+  <g stroke="#F5F8FA" stroke-width="6" stroke-linecap="round" opacity="0.9">
+    <line x1="58" y1="46" x2="182" y2="46"/>
+    <line x1="74" y1="62" x2="166" y2="62"/>
+  </g>
+  <text x="120" y="112" text-anchor="middle" font-family="'Barlow Condensed','Arial Narrow',sans-serif" font-weight="700" font-size="52" letter-spacing="6" fill="#F5F8FA" textLength="130" lengthAdjust="spacingAndGlyphs">SNEAD</text>
+  <text x="120" y="142" text-anchor="middle" font-family="'Barlow Condensed','Arial Narrow',sans-serif" font-weight="600" font-size="23" letter-spacing="4" fill="#E8622C" textLength="168" lengthAdjust="spacingAndGlyphs">COMFORT SOLUTIONS</text>
+  <g stroke="#F5F8FA" stroke-width="6" stroke-linecap="round" opacity="0.9">
+    <line x1="74" y1="178" x2="166" y2="178"/>
+    <line x1="58" y1="194" x2="182" y2="194"/>
+  </g>
+  <text x="120" y="166" text-anchor="middle" font-family="'Barlow Condensed','Arial Narrow',sans-serif" font-weight="500" font-size="14" letter-spacing="5" fill="#7FA8C4" textLength="118" lengthAdjust="spacingAndGlyphs">CERTIFIED HVAC</text>
+</svg>

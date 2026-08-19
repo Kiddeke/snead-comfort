@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 310" width="260" height="310" role="img" aria-label="Snead Comfort Solutions split diamond logo">
+  <!-- Concept 2: diamond formed by a heat chevron above and a cooling chevron below, SCS in the airflow gap -->
+  <g fill="none" stroke-width="20" stroke-linecap="square">
+    <polyline points="32,112 130,18 228,112" stroke="#E8622C"/>
+    <polyline points="32,138 130,232 228,138" stroke="#2B6E9E"/>
+  </g>
+  <text x="130" y="143" text-anchor="middle" font-family="'Barlow Condensed','Arial Narrow',sans-serif" font-weight="700" font-size="58" letter-spacing="3" fill="#142A3B">SCS</text>
+  <text x="130" y="276" text-anchor="middle" font-family="'Barlow Condensed','Arial Narrow',sans-serif" font-weight="600" font-size="27" letter-spacing="4" fill="#142A3B" textLength="210" lengthAdjust="spacingAndGlyphs">SNEAD COMFORT</text>
+  <text x="130" y="302" text-anchor="middle" font-family="'Barlow Condensed','Arial Narrow',sans-serif" font-weight="500" font-size="19" letter-spacing="7" fill="#2B6E9E" textLength="150" lengthAdjust="spacingAndGlyphs">SOLUTIONS</text>
+</svg>

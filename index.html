@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Snead Comfort Solutions — Certified HVAC Repair, Installation &amp; Maintenance</title>
+<meta name="description" content="Snead Comfort Solutions is an owner-operated, certified HVAC company. Repairs, new installations, system changeouts, and quarterly maintenance plans. Call Wesley Snead.">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&display=swap">
+<style>
+  :root {
+    --ink: #142A3B;
+    --ink-deep: #0D1E2C;
+    --steel: #2B6E9E;
+    --steel-light: #5FA8D3;
+    --ember: #E8622C;
+    --ember-deep: #C44A18;
+    --paper: #F5F8FA;
+    --card: #FFFFFF;
+    --slate: #3C4B57;
+    --mist: #DCE6ED;
+    --display: 'Barlow Condensed', 'Arial Narrow', sans-serif;
+    --body: 'Source Sans 3', 'Segoe UI', sans-serif;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  body {
+    font-family: var(--body);
+    color: var(--slate);
+    background: var(--paper);
+    line-height: 1.6;
+  }
+  .wrap { max-width: 1080px; margin: 0 auto; padding: 0 24px; }
+
+  /* ---------- header ---------- */
+  header {
+    position: sticky; top: 0; z-index: 10;
+    background: var(--paper);
+    border-bottom: 1px solid var(--mist);
+  }
+  .header-inner {
+    display: flex; align-items: center; justify-content: space-between;
+    gap: 16px; padding: 14px 0;
+  }
+  .brand { display: flex; align-items: center; gap: 12px; text-decoration: none; }
+  .brand-mark { flex: none; }
+  .brand-text { display: flex; flex-direction: column; line-height: 1.05; }
+  .brand-name {
+    font-family: var(--display); font-weight: 700; font-size: 1.5rem;
+    letter-spacing: 0.03em; color: var(--ink); text-transform: uppercase;
+  }
+  .brand-tag {
+    font-family: var(--display); font-weight: 500; font-size: 0.78rem;
+    letter-spacing: 0.28em; color: var(--steel); text-transform: uppercase;
+  }
+  nav { display: flex; align-items: center; gap: 22px; }
+  nav a {
+    font-family: var(--display); font-weight: 600; font-size: 1rem;
+    letter-spacing: 0.08em; text-transform: uppercase;
+    color: var(--slate); text-decoration: none;
+  }
+  nav a:hover, nav a:focus-visible { color: var(--ember-deep); }
+  .btn {
+    display: inline-block; font-family: var(--display); font-weight: 700;
+    font-size: 1.05rem; letter-spacing: 0.08em; text-transform: uppercase;
+    padding: 10px 22px; border-radius: 4px; text-decoration: none;
+    transition: background 0.15s ease;
+  }
+  .btn-call { background: var(--ember); color: #fff; }
+  .btn-call:hover, .btn-call:focus-visible { background: var(--ember-deep); }
+  .btn-ghost { border: 2px solid var(--ink); color: var(--ink); }
+  .btn-ghost:hover, .btn-ghost:focus-visible { background: var(--ink); color: var(--paper); }
+  a:focus-visible, .btn:focus-visible { outline: 3px solid var(--steel-light); outline-offset: 2px; }
+  @media (max-width: 760px) { nav .nav-link { display: none; } }
+
+  /* ---------- hero ---------- */
+  .hero { background: var(--ink); color: var(--paper); overflow: hidden; }
+  .hero-inner {
+    display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 40px;
+    align-items: center; padding: 72px 0 80px;
+  }
+  .hero-eyebrow {
+    font-family: var(--display); font-weight: 600; font-size: 0.95rem;
+    letter-spacing: 0.3em; text-transform: uppercase; color: var(--steel-light);
+    margin-bottom: 18px;
+  }
+  .hero h1 {
+    font-family: var(--display); font-weight: 700; text-transform: uppercase;
+    font-size: clamp(2.6rem, 6vw, 4.2rem); line-height: 0.98;
+    letter-spacing: 0.01em; color: #fff; text-wrap: balance;
+    margin-bottom: 22px;
+  }
+  .hero h1 .warm { color: var(--ember); }
+  .hero h1 .cool { color: var(--steel-light); }
+  .hero p { max-width: 46ch; font-size: 1.12rem; color: #C6D4DE; margin-bottom: 30px; }
+  .hero-ctas { display: flex; flex-wrap: wrap; gap: 14px; }
+  .hero .btn-ghost { border-color: var(--steel-light); color: var(--steel-light); }
+  .hero .btn-ghost:hover, .hero .btn-ghost:focus-visible { background: var(--steel-light); color: var(--ink-deep); }
+  .hero-art { justify-self: center; }
+  @media (max-width: 820px) {
+    .hero-inner { grid-template-columns: 1fr; padding: 56px 0 64px; }
+    .hero-art { display: none; }
+  }
+
+  /* ---------- sections ---------- */
+  section { padding: 72px 0; }
+  .section-kicker {
+    font-family: var(--display); font-weight: 600; font-size: 0.9rem;
+    letter-spacing: 0.3em; text-transform: uppercase; color: var(--ember-deep);
+    margin-bottom: 10px;
+  }
+  h2 {
+    font-family: var(--display); font-weight: 700; text-transform: uppercase;
+    font-size: clamp(1.9rem, 4vw, 2.6rem); line-height: 1.05;
+    color: var(--ink); text-wrap: balance; margin-bottom: 14px;
+  }
+  .section-lede { max-width: 62ch; font-size: 1.08rem; margin-bottom: 40px; }
+
+  /* services */
+  .services-grid {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 22px;
+  }
+  .service {
+    background: var(--card); border: 1px solid var(--mist); border-radius: 6px;
+    padding: 26px 24px 28px; display: flex; flex-direction: column; gap: 12px;
+  }
+  .service svg { width: 44px; height: 44px; }
+  .service h3 {
+    font-family: var(--display); font-weight: 700; font-size: 1.35rem;
+    text-transform: uppercase; letter-spacing: 0.04em; color: var(--ink);
+  }
+  .service p { font-size: 0.98rem; }
+
+  /* maintenance band */
+  .plan { background: var(--ember); color: #fff; }
+  .plan-inner {
+    display: grid; grid-template-columns: 1fr auto; gap: 32px; align-items: center;
+    padding: 56px 0;
+  }
+  .plan .section-kicker { color: #FFD9C4; }
+  .plan h2 { color: #fff; }
+  .plan p { max-width: 58ch; font-size: 1.08rem; color: #FFE8DC; }
+  .plan .btn { background: var(--ink); color: #fff; white-space: nowrap; }
+  .plan .btn:hover, .plan .btn:focus-visible { background: var(--ink-deep); }
+  .plan ul { margin: 16px 0 0 0; padding: 0; list-style: none; display: grid; gap: 8px; }
+  .plan li { padding-left: 26px; position: relative; color: #FFF3EC; }
+  .plan li::before {
+    content: ""; position: absolute; left: 0; top: 7px;
+    width: 12px; height: 12px; background: var(--ink); transform: rotate(45deg);
+  }
+  @media (max-width: 720px) { .plan-inner { grid-template-columns: 1fr; } }
+
+  /* about */
+  .about-inner { display: grid; grid-template-columns: auto 1fr; gap: 48px; align-items: start; }
+  .about p { max-width: 62ch; font-size: 1.05rem; margin-bottom: 14px; }
+  .cred {
+    margin-top: 22px; display: inline-flex; align-items: center; gap: 12px;
+    background: var(--card); border: 1px solid var(--mist); border-radius: 6px;
+    padding: 12px 18px;
+  }
+  .cred strong {
+    font-family: var(--display); font-weight: 700; font-size: 1.05rem;
+    letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink);
+  }
+  @media (max-width: 820px) { .about-inner { grid-template-columns: 1fr; } .about-badge { display: none; } }
+
+  /* contact */
+  .contact { background: var(--ink); color: var(--paper); }
+  .contact .section-kicker { color: var(--steel-light); }
+  .contact h2 { color: #fff; }
+  .contact-grid {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 22px; margin-top: 36px;
+  }
+  .contact-card {
+    border: 1px solid #29455C; border-radius: 6px; padding: 22px;
+  }
+  .contact-card h3 {
+    font-family: var(--display); font-weight: 600; font-size: 1rem;
+    letter-spacing: 0.25em; text-transform: uppercase; color: var(--steel-light);
+    margin-bottom: 8px;
+  }
+  .contact-card a, .contact-card span {
+    font-family: var(--display); font-weight: 700; font-size: 1.5rem;
+    color: #fff; text-decoration: none; letter-spacing: 0.03em;
+  }
+  .contact-card a:hover, .contact-card a:focus-visible { color: var(--ember); }
+  .contact-card p { margin-top: 6px; font-size: 0.95rem; color: #A9BCCA; }
+
+  footer { background: var(--ink-deep); color: #7C93A5; padding: 26px 0; font-size: 0.9rem; }
+  .footer-inner { display: flex; flex-wrap: wrap; gap: 12px; justify-content: space-between; align-items: center; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap header-inner">
+    <a class="brand" href="#top" aria-label="Snead Comfort Solutions home">
+      <svg class="brand-mark" width="42" height="42" viewBox="0 0 120 120" aria-hidden="true">
+        <g fill="none" stroke-width="11" stroke-linecap="square">
+          <polyline points="14,52 60,8 106,52" stroke="var(--ember)"/>
+          <polyline points="14,68 60,112 106,68" stroke="var(--steel)"/>
+        </g>
+      </svg>
+      <span class="brand-text">
+        <span class="brand-name">Snead Comfort</span>
+        <span class="brand-tag">Solutions</span>
+      </span>
+    </a>
+    <nav aria-label="Main">
+      <a class="nav-link" href="#services">Services</a>
+      <a class="nav-link" href="#plan">Maintenance Plan</a>
+      <a class="nav-link" href="#about">About</a>
+      <!-- TODO: replace placeholder phone number everywhere before launch -->
+      <a class="btn btn-call" href="tel:+15555550134">Call (555) 555-0134</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <div class="hero">
+    <div class="wrap hero-inner">
+      <div>
+        <p class="hero-eyebrow">Certified HVAC · Owner Operated</p>
+        <h1>Set it to 72.<br><span class="warm">Forget</span> the <span class="cool">rest</span>.</h1>
+        <p>Snead Comfort Solutions is the one call for heating and cooling repairs, new installations, full system changeouts, and quarterly maintenance — handled start to finish by certified HVAC technician Wesley Snead.</p>
+        <div class="hero-ctas">
+          <a class="btn btn-call" href="tel:+15555550134">Call or text Wesley</a>
+          <a class="btn btn-ghost" href="#services">See services</a>
+        </div>
+      </div>
+      <svg class="hero-art" width="300" height="330" viewBox="0 0 260 290" aria-hidden="true">
+        <g fill="none" stroke-width="20" stroke-linecap="square">
+          <polyline points="32,112 130,18 228,112" stroke="#E8622C"/>
+          <polyline points="32,138 130,232 228,138" stroke="#5FA8D3"/>
+        </g>
+        <text x="130" y="143" text-anchor="middle" font-family="'Barlow Condensed','Arial Narrow',sans-serif" font-weight="700" font-size="58" letter-spacing="3" fill="#F5F8FA">SCS</text>
+        <text x="130" y="278" text-anchor="middle" font-family="'Barlow Condensed','Arial Narrow',sans-serif" font-weight="500" font-size="18" letter-spacing="6" fill="#7FA8C4">EST. 2026</text>
+      </svg>
+    </div>
+  </div>
+
+  <section id="services">
+    <div class="wrap">
+      <p class="section-kicker">What we do</p>
+      <h2>Every job your system will ever need</h2>
+      <p class="section-lede">One certified technician, four core services, zero runaround. You talk to the person doing the work — before, during, and after the job.</p>
+      <div class="services-grid">
+        <div class="service">
+          <svg viewBox="0 0 44 44" aria-hidden="true"><path d="M28 6a10 10 0 0 0-13 13L6 28a4 4 0 0 0 0 6l4 4a4 4 0 0 0 6 0l9-9A10 10 0 0 0 38 16l-6 6-6-2-2-6 6-6-2-2z" fill="none" stroke="#2B6E9E" stroke-width="2.6" stroke-linejoin="round"/></svg>
+          <h3>Repairs</h3>
+          <p>No heat in January or no cool in July — diagnosis first, a straight answer on cost, then a fix that lasts. All major residential makes and models.</p>
+        </div>
+        <div class="service">
+          <svg viewBox="0 0 44 44" aria-hidden="true"><rect x="8" y="6" width="28" height="32" rx="3" fill="none" stroke="#2B6E9E" stroke-width="2.6"/><line x1="14" y1="14" x2="30" y2="14" stroke="#E8622C" stroke-width="2.6"/><line x1="14" y1="21" x2="30" y2="21" stroke="#2B6E9E" stroke-width="2.6"/><line x1="14" y1="28" x2="30" y2="28" stroke="#2B6E9E" stroke-width="2.6"/></svg>
+          <h3>Installations</h3>
+          <p>New builds and first-time central air. Right-sized equipment matched to your house with a real load calculation — not just the biggest unit on the truck.</p>
+        </div>
+        <div class="service">
+          <svg viewBox="0 0 44 44" aria-hidden="true"><path d="M10 16 22 6l12 10" fill="none" stroke="#E8622C" stroke-width="2.6" stroke-linecap="square"/><path d="M34 28 22 38 10 28" fill="none" stroke="#2B6E9E" stroke-width="2.6" stroke-linecap="square"/><line x1="22" y1="17" x2="22" y2="27" stroke="#142A3B" stroke-width="2.6"/></svg>
+          <h3>Changeouts</h3>
+          <p>When a unit is past saving, we swap it without drama: old equipment hauled away, the new system installed, dialed in, and tested before we leave.</p>
+        </div>
+        <div class="service">
+          <svg viewBox="0 0 44 44" aria-hidden="true"><circle cx="22" cy="22" r="16" fill="none" stroke="#2B6E9E" stroke-width="2.6"/><path d="M22 12v10l7 5" fill="none" stroke="#E8622C" stroke-width="2.6" stroke-linecap="round"/></svg>
+          <h3>Quarterly Maintenance</h3>
+          <p>Four visits a year to keep small problems small: coils cleaned, filters swapped, refrigerant and electrical checked, everything documented.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="plan" id="plan">
+    <div class="wrap plan-inner">
+      <div>
+        <p class="section-kicker">The Comfort Plan</p>
+        <h2>The cheapest repair is the one you never need</h2>
+        <p>Quarterly maintenance catches worn parts, dirty coils, and low refrigerant before they turn into a dead system on the hottest day of the year. Plan members get:</p>
+        <ul>
+          <li>Four scheduled tune-ups per year — heating and cooling seasons covered</li>
+          <li>Priority scheduling when something does break</li>
+          <li>A written condition report after every visit</li>
+        </ul>
+      </div>
+      <a class="btn" href="tel:+15555550134">Ask about the plan</a>
+    </div>
+  </div>
+
+  <section id="about" class="about">
+    <div class="wrap about-inner">
+      <svg class="about-badge" width="180" height="180" viewBox="0 0 240 240" aria-hidden="true">
+        <rect x="8" y="8" width="224" height="224" rx="26" fill="#142A3B"/>
+        <rect x="16" y="16" width="208" height="208" rx="20" fill="none" stroke="#2B6E9E" stroke-width="2"/>
+        <g stroke="#F5F8FA" stroke-width="6" stroke-linecap="round" opacity="0.9">
+          <line x1="58" y1="46" x2="182" y2="46"/><line x1="74" y1="62" x2="166" y2="62"/>
+        </g>
+        <text x="120" y="112" text-anchor="middle" font-family="'Barlow Condensed','Arial Narrow',sans-serif" font-weight="700" font-size="52" letter-spacing="6" fill="#F5F8FA" textLength="130" lengthAdjust="spacingAndGlyphs">SNEAD</text>
+        <text x="120" y="142" text-anchor="middle" font-family="'Barlow Condensed','Arial Narrow',sans-serif" font-weight="600" font-size="23" letter-spacing="4" fill="#E8622C" textLength="168" lengthAdjust="spacingAndGlyphs">COMFORT SOLUTIONS</text>
+        <text x="120" y="166" text-anchor="middle" font-family="'Barlow Condensed','Arial Narrow',sans-serif" font-weight="500" font-size="14" letter-spacing="5" fill="#7FA8C4" textLength="118" lengthAdjust="spacingAndGlyphs">CERTIFIED HVAC</text>
+        <g stroke="#F5F8FA" stroke-width="6" stroke-linecap="round" opacity="0.9">
+          <line x1="74" y1="178" x2="166" y2="178"/><line x1="58" y1="194" x2="182" y2="194"/>
+        </g>
+      </svg>
+      <div>
+        <p class="section-kicker">Who's showing up</p>
+        <h2>Wesley Snead, certified HVAC technician</h2>
+        <p>Snead Comfort Solutions is owner-operated, which means the certified technician who answers the phone is the same one who shows up at your door — no dispatchers, no rotating crews, no upsell quotas.</p>
+        <p>Wesley gives you a straight diagnosis, a clear price before work starts, and a job site left cleaner than he found it. When he says a repair will hold or a unit is worth replacing, that's the honest read — his name is on the truck.</p>
+        <div class="cred">
+          <svg width="26" height="26" viewBox="0 0 26 26" aria-hidden="true"><polygon points="13,1 25,13 13,25 1,13" fill="none" stroke="#E8622C" stroke-width="2.4"/><path d="M8 13l3.5 3.5L18 10" fill="none" stroke="#2B6E9E" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <strong>Certified HVAC · Licensed &amp; Insured</strong>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="wrap">
+      <p class="section-kicker">Get comfortable</p>
+      <h2>Talk to Wesley</h2>
+      <div class="contact-grid">
+        <div class="contact-card">
+          <h3>Call or Text</h3>
+          <a href="tel:+15555550134">(555) 555-0134</a>
+          <p>Fastest way to reach us — same-day answers on repairs.</p>
+        </div>
+        <div class="contact-card">
+          <h3>Email</h3>
+          <a href="mailto:wesley@sneadcomfort.com">wesley@sneadcomfort.com</a>
+          <p>Good for install quotes, photos of your unit, and plan questions.</p>
+        </div>
+        <div class="contact-card">
+          <h3>Service Area</h3>
+          <span>Your Town &amp; Surrounding Areas</span>
+          <p>Not sure if you're in range? Call — if we can't get to you, we'll say so.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap footer-inner">
+    <span>© 2026 Snead Comfort Solutions · Certified HVAC</span>
+    <span>Repairs · Installs · Changeouts · Quarterly Maintenance</span>
+  </div>
+</footer>
+
+</body>
+</html>
