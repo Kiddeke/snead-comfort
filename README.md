@@ -13,13 +13,19 @@ Marketing site for Snead Comfort Solutions, an owner-operated certified HVAC com
 - `assets/favicon.svg` — browser tab icon.
 - `CNAME` — points GitHub Pages at sneadcomfort.com.
 
-## Before launch — replace the placeholders
+## Business details
 
-1. **Phone number**: `(555) 555-0134` / `tel:+15555550134` appears in the header, hero,
-   maintenance band, and contact section. Search `index.html` for `555` and replace all.
-2. **Service area**: the contact section says "Your Town & Surrounding Areas".
-3. **Email**: `wesley@sneadcomfort.com` — set this mailbox up on the domain, or change it.
-4. **License number**: add Wesley's HVAC license/cert number to the footer if required in your state.
+- **Phone**: (660) 254-4556 — appears in the header, hero, maintenance band, and contact
+  section as `tel:+16602544556` links, so it dials on tap from a phone.
+- **Email**: sneadcomfort@gmail.com
+- **Service area**: Maryville, MO and surrounding areas.
+
+To change any of these later, search `index.html` for `6602544556`, `sneadcomfort@gmail.com`,
+or `Maryville` — and update the `<meta name="description">` tag too, which repeats the phone
+number and town for search engines.
+
+Still optional: add Wesley's HVAC license/cert number to the footer if Missouri requires it
+on advertising.
 
 ## Going live
 
