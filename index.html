@@ -165,6 +165,8 @@
     content: ""; position: absolute; left: 0; top: 7px;
     width: 12px; height: 12px; background: var(--ember); transform: rotate(45deg);
   }
+  .plan li strong { color: #fff; font-weight: 600; }
+  .plan .plan-fine { margin-top: 18px; font-size: 0.98rem; color: #C9DCEE; }
   @media (max-width: 720px) { .plan-inner { grid-template-columns: 1fr; } }
 
   /* about */
@@ -200,8 +202,10 @@
   .contact-card a, .contact-card span {
     font-family: var(--display); font-weight: 700; font-size: 1.5rem;
     color: #fff; text-decoration: none; letter-spacing: 0.03em;
-    overflow-wrap: anywhere;
+    overflow-wrap: break-word;
   }
+  /* the email is the longest item — size it to fit the card on one line */
+  .contact-card a[href^="mailto:"] { font-size: 1.25rem; }
   .contact-card a:hover, .contact-card a:focus-visible { color: var(--ember); }
   .contact-card p { margin-top: 6px; font-size: 0.95rem; color: #A9BCCA; }
 
@@ -328,12 +332,15 @@
       <div>
         <p class="section-kicker">The Comfort Plan</p>
         <h2>The cheapest repair is the one you never need</h2>
-        <p>Quarterly maintenance catches worn parts, dirty coils, and low refrigerant before they turn into a dead system on the hottest day of the year. Plan members get:</p>
+        <p>Quarterly maintenance catches worn parts, dirty coils, and low refrigerant before they turn into a dead system on the hottest day of the year. Comfort Plan members get:</p>
         <ul>
-          <li>Four scheduled tune-ups per year — heating and cooling seasons covered</li>
-          <li>Priority scheduling when something does break</li>
-          <li>A written condition report after every visit</li>
+          <li><strong>Four tune-ups a year</strong> — two before cooling season, two before heating season</li>
+          <li><strong>A real tune-up every visit:</strong> coils cleaned, condensate drain cleared, refrigerant pressures checked, electrical connections tightened, capacitors and safety controls tested, filter changed, and a carbon monoxide test on the furnace</li>
+          <li><strong>Priority scheduling</strong> — members go to the front of the line when something breaks</li>
+          <li><strong>A written condition report</strong> after every visit, so you always know where your system stands</li>
+          <li><strong>Transfers with the house</strong> — sell the place, and the remaining plan goes to the new owner</li>
         </ul>
+        <p class="plan-fine">One flat price per system, billed yearly or monthly. Repairs are always quoted before any work starts.</p>
       </div>
       <a class="btn" href="tel:+16602544556">Ask about the plan</a>
     </div>
@@ -379,7 +386,7 @@
         </div>
         <div class="contact-card">
           <h3>Email</h3>
-          <a href="mailto:sneadcomfort@gmail.com">sneadcomfort@gmail.com</a>
+          <a href="mailto:sneadcomfort@gmail.com">sneadcomfort@<wbr>gmail.com</a>
           <p>Good for install quotes, photos of your unit, and plan questions.</p>
         </div>
         <div class="contact-card">
