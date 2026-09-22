@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Snead Comfort Solutions — Certified HVAC Repair, Installation &amp; Maintenance</title>
-<meta name="description" content="Certified, owner-operated HVAC in Maryville, MO and surrounding areas. Repairs, new installations, system changeouts, and quarterly maintenance plans. Call Wesley Snead at (660) 254-4556.">
+<meta name="description" content="Certified, owner-operated HVAC in Maryville, MO and surrounding areas. Repairs, new installations, system changeouts, and maintenance plans. Call Wesley Snead at (660) 254-4556.">
 <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -169,6 +169,39 @@
   .plan .plan-fine { margin-top: 18px; font-size: 0.98rem; color: #C9DCEE; }
   @media (max-width: 720px) { .plan-inner { grid-template-columns: 1fr; } }
 
+  /* ---------- plan levels ---------- */
+  /* sticky header would otherwise cover an anchored section */
+  #services, #plan, #levels, #about, #contact { scroll-margin-top: 104px; }
+  .levels-grid {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(258px, 1fr)); gap: 22px;
+  }
+  .level {
+    background: var(--card); border: 1px solid var(--mist); border-radius: 6px;
+    padding: 26px 24px 28px; display: flex; flex-direction: column; gap: 16px;
+  }
+  .level-best { border: 2px solid var(--ember); }
+  .level h3 {
+    font-family: var(--display); font-weight: 700; font-size: 1.2rem;
+    text-transform: uppercase; letter-spacing: 0.1em; color: var(--ink);
+  }
+  .level-price {
+    font-family: var(--display); font-weight: 700; font-size: 2.1rem; line-height: 1;
+    color: var(--ink); font-variant-numeric: tabular-nums;
+  }
+  .level-price small {
+    display: block; margin-top: 7px; font-family: var(--body); font-weight: 400;
+    font-size: 0.95rem; color: var(--slate);
+  }
+  .level-specs {
+    list-style: none; margin: 0; padding: 16px 0 0; display: grid; gap: 9px;
+    border-top: 1px solid var(--mist);
+  }
+  .level-specs li { display: flex; justify-content: space-between; gap: 14px; font-size: 0.95rem; }
+  .level-specs strong { font-weight: 600; color: var(--ink); text-align: right; font-variant-numeric: tabular-nums; }
+  .level .btn { margin-top: auto; text-align: center; }
+  .levels-note { max-width: 70ch; margin-top: 30px; font-size: 0.98rem; }
+  @media (max-width: 600px) { #services, #plan, #levels, #about, #contact { scroll-margin-top: 78px; } }
+
   /* about */
   .about-inner { display: grid; grid-template-columns: auto 1fr; gap: 48px; align-items: start; }
   .about p { max-width: 62ch; font-size: 1.05rem; margin-bottom: 14px; }
@@ -258,7 +291,7 @@
       <div>
         <p class="hero-eyebrow">Certified HVAC · Owner Operated</p>
         <h1>Set it to 72.<br><span class="warm">Forget</span> the <span class="cool">rest</span>.</h1>
-        <p>Snead Comfort Solutions is the one call for heating and cooling repairs, new installations, full system changeouts, and quarterly maintenance — handled start to finish by certified HVAC technician Wesley Snead.</p>
+        <p>Snead Comfort Solutions is the one call for heating and cooling repairs, new installations, full system changeouts, and maintenance plans — handled start to finish by certified HVAC technician Wesley Snead.</p>
         <div class="hero-ctas">
           <a class="btn btn-call" href="tel:+16602544556">Call or text Wesley</a>
           <a class="btn btn-ghost" href="#services">See services</a>
@@ -320,8 +353,8 @@
         </div>
         <div class="service">
           <svg viewBox="0 0 44 44" aria-hidden="true"><circle cx="22" cy="22" r="16" fill="none" stroke="#1B5CA8" stroke-width="2.6"/><path d="M22 12v10l7 5" fill="none" stroke="#8CC63F" stroke-width="2.6" stroke-linecap="round"/></svg>
-          <h3>Quarterly Maintenance</h3>
-          <p>Four visits a year to keep small problems small: coils cleaned, filters swapped, refrigerant and electrical checked, everything documented.</p>
+          <h3>Maintenance Plans</h3>
+          <p>Two to four visits a year, depending on your level, to keep small problems small: coils cleaned, filters swapped, refrigerant and electrical checked, everything documented.</p>
         </div>
       </div>
     </div>
@@ -332,19 +365,75 @@
       <div>
         <p class="section-kicker">The Comfort Plan</p>
         <h2>The cheapest repair is the one you never need</h2>
-        <p>Quarterly maintenance catches worn parts, dirty coils, and low refrigerant before they turn into a dead system on the hottest day of the year. Comfort Plan members get:</p>
+        <p>Maintenance catches worn parts, dirty coils, and low refrigerant before they turn into a dead system on the hottest day of the year. Every Comfort Plan — Bronze, Silver, and Gold — includes:</p>
         <ul>
-          <li><strong>Four tune-ups a year</strong> — two before cooling season, two before heating season</li>
           <li><strong>A real tune-up every visit:</strong> coils cleaned, condensate drain cleared, refrigerant pressures checked, electrical connections tightened, capacitors and safety controls tested, filter changed, and a carbon monoxide test on the furnace</li>
-          <li><strong>Priority scheduling</strong> — members go to the front of the line when something breaks</li>
           <li><strong>A written condition report</strong> after every visit, so you always know where your system stands</li>
+          <li><strong>Member pricing on repairs</strong> — and repairs are always quoted before any work starts</li>
           <li><strong>Moves with you</strong> — relocate within our service area and your plan follows you to the new house</li>
         </ul>
-        <p class="plan-fine">One flat price per system, billed yearly or monthly. Repairs are always quoted before any work starts.</p>
+        <p class="plan-fine">One flat price per system, billed yearly or split monthly. The three levels differ in how often we come out, how much you save, and how fast we get there.</p>
       </div>
-      <a class="btn" href="tel:+16602544556">Ask about the plan</a>
+      <a class="btn" href="#levels">See the three levels</a>
     </div>
   </div>
+
+  <section id="levels">
+    <div class="wrap">
+      <p class="section-kicker">Choose your level</p>
+      <h2>Bronze, Silver, and Gold</h2>
+      <p class="section-lede">Prices are per system, per year. A system is one furnace and its paired air conditioner, or one heat pump or packaged unit.</p>
+      <div class="levels-grid">
+
+        <article class="level" id="bronze">
+          <h3>Bronze</h3>
+          <p class="level-price">$200<small>per system, per year — or $40 down and $14.55 a month</small></p>
+          <ul class="level-specs">
+            <li><span>Tune-ups a year</span><strong>2</strong></li>
+            <li><span>Parts &amp; labor</span><strong>10% off</strong></li>
+            <li><span>Service call fee</span><strong>Standard</strong></li>
+            <li><span>Repair warranty</span><strong>90 days</strong></li>
+            <li><span>Filters included</span><strong>No</strong></li>
+            <li><span>Priority</span><strong>Standard</strong></li>
+          </ul>
+          <p>The two seasonal tune-ups that keep your manufacturer's warranty valid and catch problems early.</p>
+          <a class="btn btn-ghost" href="tel:+16602544556">Ask about Bronze</a>
+        </article>
+
+        <article class="level" id="silver">
+          <h3>Silver</h3>
+          <p class="level-price">$300<small>per system, per year — or $60 down and $21.82 a month</small></p>
+          <ul class="level-specs">
+            <li><span>Tune-ups a year</span><strong>2</strong></li>
+            <li><span>Parts &amp; labor</span><strong>15% off</strong></li>
+            <li><span>Service call fee</span><strong>10% off</strong></li>
+            <li><span>Repair warranty</span><strong>1 year</strong></li>
+            <li><span>Filters included</span><strong>Every visit</strong></li>
+            <li><span>Priority</span><strong>Next in line</strong></li>
+          </ul>
+          <p>Everything in Bronze, plus you skip ahead when something breaks, pay less when it does, and stop buying filters.</p>
+          <a class="btn btn-ghost" href="tel:+16602544556">Ask about Silver</a>
+        </article>
+
+        <article class="level level-best" id="gold">
+          <h3>Gold</h3>
+          <p class="level-price">$500<small>per system, per year — or $100 down and $36.36 a month</small></p>
+          <ul class="level-specs">
+            <li><span>Tune-ups a year</span><strong>4</strong></li>
+            <li><span>Parts &amp; labor</span><strong>20% off</strong></li>
+            <li><span>Service call fee</span><strong>25% off</strong></li>
+            <li><span>Repair warranty</span><strong>5 years</strong></li>
+            <li><span>Filters included</span><strong>Filters + capacitor</strong></li>
+            <li><span>Priority</span><strong>24-hour response</strong></li>
+          </ul>
+          <p>Four visits with deep cleaning, a guaranteed 24-hour response, and the longest warranty we offer. Best for older systems and anyone who has been burned by a summer breakdown.</p>
+          <a class="btn btn-call" href="tel:+16602544556">Ask about Gold</a>
+        </article>
+
+      </div>
+      <p class="levels-note">Extended Silver and Gold repair warranties apply while your plan stays active. Filters included are our standard 1-inch pleated filter; if your system takes a specialty filter, you pay only the difference. Call or text Wesley at <a href="tel:+16602544556">(660)&nbsp;254-4556</a> and he will walk you through which level fits your system.</p>
+    </div>
+  </section>
 
   <section id="about" class="about">
     <div class="wrap about-inner">
@@ -402,7 +491,7 @@
 <footer>
   <div class="wrap footer-inner">
     <span>© 2026 Snead Comfort Solutions · Certified HVAC</span>
-    <span>Repairs · Installs · Changeouts · Quarterly Maintenance</span>
+    <span>Repairs · Installs · Changeouts · Maintenance Plans</span>
   </div>
 </footer>
 
